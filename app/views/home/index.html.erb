@@ -16,24 +16,13 @@
   <div class="content-wrapper">
     <h2>Some ideas</h2>
     <ul class="bare-list float-grid css-grid">
+      <% ['Hello to my first Card', 'Hello to my second Card', 'Hello to my third Card'].each do |item| %>
       <li>
-        <%= render(partial:'style/idea_card',
-        locals: {
-          title: 'Hello to my first Card'
+        <%= render(partial:'layouts/idea_card', locals: {
+          title: item
         })%>
-      </li>
-      <li>
-        <%= render(partial:'style/idea_card',
-        locals: {
-          title: 'Hello to my second Card'
-        })%>
-      </li>
-      <li>
-        <%= render(partial:'style/idea_card',
-        locals: {
-          title: 'Hello to my third Card'
-        })%>
-      </li>
+        </li>
+        <% end %>
     </ul>
   </div>
   <div class="see-more">
