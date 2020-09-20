@@ -43,7 +43,7 @@ Simple Ruby on Rails app to create for the EPFL EXTS tutorial.
 - [X] Introduce an Array that contains Strings for titles of each card. Iterate over the Array in order to render an Idea card for each title. Titles can be whatever you choose.
 
 ## Tasks 6
-- [ ] Extract a partial for the list item within the secondary navigation of styles#atoms. Make the partial reusable by introducing two local parameters, title and uri.
-- [ ] Make use of the new partial in the atoms.html.erb, molecules.html.erb and organisms.html.erb views to render the link for each of these views, setting the title and uri correctly.
-- [ ] Introduce an if conditional in this new partial. The conditional will control whether the current class is added to the anchor element within the list item. Use a boolean partial parameter current to control the conditional expression.
-- [ ] Set the current parameter on the appropriate partial in each of the three views so that the currently visible section is highlighted in each view e.g. "Atoms" is the highlighted menu item in atoms.html.erb.
+- [X] Extract a partial for the list item within the secondary navigation of styles#atoms. Make the partial reusable by introducing two local parameters, title and uri.
+- [X] Make use of the new partial in the atoms.html.erb, molecules.html.erb and organisms.html.erb views to render the link for each of these views, setting the title and uri correctly.
+- [X] Introduce an if conditional in this new partial. The conditional will control whether the current class is added to the anchor element within the list item. Use a boolean partial parameter current to control the conditional expression.
+- [X] Set the current parameter on the appropriate partial in each of the three views so that the currently visible section is highlighted in each view e.g. "Atoms" is the highlighted menu item in atoms.html.erb.

@@ -6,12 +6,36 @@
         </p>
         <nav>
           <ul class="sub-navigation">
-            <li><%= link_to('Home', root_path) %></li>
-            <li><%= link_to('Atoms', 'atoms') %></li>
-            <li><%= link_to('Molecules', 'molecules') %></li>
-            <li><%= link_to('Organisms', 'organisms') %></li>
-            <li><%= link_to('Templates', 'templates') %></li>
-            <li><%= link_to('Pages', 'pages') %></li>
+            <%= render(partial:'sub_nav_item', locals: {
+              current: false,
+              title: 'Home',
+              uri: '/home/index'
+            })%>
+            <%= render(partial:'sub_nav_item', locals: {
+              current: true,
+              title: 'Atoms',
+              uri: 'atoms'
+            })%>
+            <%= render(partial:'sub_nav_item', locals: {
+              current: false,
+              title: 'Molecules',
+              uri: 'molecules'
+            })%>
+            <%= render(partial:'sub_nav_item', locals: {
+              current: false,
+              title: 'Organisms',
+              uri: 'organisms'
+            })%>
+            <%= render(partial:'sub_nav_item', locals: {
+              current: false,
+              title: 'Templates',
+              uri: 'templates'
+            })%>
+            <%= render(partial:'sub_nav_item', locals: {
+              current: false,
+              title: 'Pages',
+              uri: 'pages'
+            })%>
           </ul>
         </nav>
         <h2>Atoms</h2>
