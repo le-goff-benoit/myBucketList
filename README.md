@@ -4,7 +4,7 @@ Simple Ruby on Rails app to create for the EXTS tutorial.
 ## Task 1
 - [X] Generate views for the style guide in a new controller. Name the controller styles and create it with these views: atoms, molecules, and organisms.
 
-- [ ] Generate a view for the home page in a separate controller. Name the controller home and create it with this view: index.
+- [X] Generate a view for the home page in a separate controller. Name the controller home and create it with this view: index.
 
 - [ ] In the application.html.erb layout, add a normal stylesheet link to the style guide CSS files /css/main.css and /css/styleguide.css, which we added to the public/ folder previously.
 
