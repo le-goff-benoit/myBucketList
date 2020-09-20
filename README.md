@@ -15,10 +15,17 @@ Simple Ruby on Rails app to create for the EXTS tutorial.
 - [X] For each of the view files created in task 1 for the style guide, replace its contents with the contents from the matching static HTML file within the public/ folder. For each view, this should be the "main" element and it's contents, within <body>.
 
 ## Tasks part 2
-- [ ] Extract a partial for each of these molecules in the molecules view of the style guide.
+- [X] Extract a partial for each of these molecules in the molecules view of the style guide.
   - Idea card, named _idea_card. This will contain the <div class="card"> element as the root.
   - Logo, named _logo. This will contain the <div class="logo"> element as the root.
   - Negative logo, named _negative_logo. This will contain the <div class="sg-dark-bg"> element as the root.
   - Search, named _search_control. This will contain the <div class="input-inline"> element as the root.
-- [ ] Use each of the partials to replace the inline HTML in the molecules view, so that the contents of the molecules view are shorter.
-- [ ] Use a reference to the _idea_card partial from 1.1 above to replace the inline three instances in the home/index view of the idea card component.
+- [X] Use each of the partials to replace the inline HTML in the molecules view, so that the contents of the molecules view are shorter.
+- [X] Use a reference to the _idea_card partial from 1.1 above to replace the inline three instances in the home/index view of the idea card component.
+
+## Tasks part 3
+- [ ] Find the Molecules link in the styles/atoms view and replace it with an ERB expression tag that uses a link_to helper method.
+- [ ] Find the Organisms link in the styles/atoms view and replace it with an ERB expression tag that uses a link_to helper method.
+- [ ] Find the Atoms and Organisms links in the styles/molecules view and replace them with ERB expression tags that use a link_to helper method.
+- [ ] Find the Atoms and Molecules links in the styles/organisms view and replace them with ERB expression tags that use a link_to helper method.
+- [ ] Find the root link, /, in the application layout file, app/views/layouts/application.html.erb and replace it with an ERB expression tag that uses a link_to helper method. HINT: you will need to use the #html_safe method on the String for the link contents to make the title render correctly
