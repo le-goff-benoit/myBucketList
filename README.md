@@ -1,7 +1,7 @@
 # My Bucket List
 Simple Ruby on Rails app to create for the EXTS tutorial.
 
-## Tasks part 1
+## Tasks 1
 - [X] Add static style guide to Rails app.
 
 - [X] Generate views for the style guide in a new controller. Name the controller styles and create it with these views: atoms, molecules, and organisms.
@@ -14,7 +14,7 @@ Simple Ruby on Rails app to create for the EXTS tutorial.
 
 - [X] For each of the view files created in task 1 for the style guide, replace its contents with the contents from the matching static HTML file within the public/ folder. For each view, this should be the "main" element and it's contents, within <body>.
 
-## Tasks part 2
+## Tasks 2
 - [X] Extract a partial for each of these molecules in the molecules view of the style guide.
   - Idea card, named _idea_card. This will contain the <div class="card"> element as the root.
   - Logo, named _logo. This will contain the <div class="logo"> element as the root.
@@ -23,9 +23,18 @@ Simple Ruby on Rails app to create for the EXTS tutorial.
 - [X] Use each of the partials to replace the inline HTML in the molecules view, so that the contents of the molecules view are shorter.
 - [X] Use a reference to the _idea_card partial from 1.1 above to replace the inline three instances in the home/index view of the idea card component.
 
-## Tasks part 3
+## Tasks 3
 - [X] Find the Molecules link in the styles/atoms view and replace it with an ERB expression tag that uses a link_to helper method.
 - [X] Find the Organisms link in the styles/atoms view and replace it with an ERB expression tag that uses a link_to helper method.
 - [X] Find the Atoms and Organisms links in the styles/molecules view and replace them with ERB expression tags that use a link_to helper method.
 - [X] Find the Atoms and Molecules links in the styles/organisms view and replace them with ERB expression tags that use a link_to helper method.
 - [X] Find the root link, /, in the application layout file, app/views/layouts/application.html.erb and replace it with an ERB expression tag that uses a link_to helper method. HINT: you will need to use the #html_safe method on the String for the link contents to make the title render correctly
+
+## Tasks 4
+- [ ] From the styles/atoms view, extract a partial for each of the following. Make use of the button_tag helper and also use a partial parameter for the button text. There's no need to introduce a partial parameter for class: in this task.
+    - Button
+    - Link button
+    - Primary button
+    - Warning button
+- [ ] Modify the styles/_idea_card.html.erb partial so that the title can be passed in as a partial parameter.
+- [ ] In styles/organisms, extract a partial for the "prompt" section of the input forms, that contains everything within the <div class="prompt"> element. Introduce a partial parameter so that it can be reused for all of the forms in the styles/organisms view.
