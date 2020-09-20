@@ -51,10 +51,11 @@ Simple Ruby on Rails app to create for the EPFL EXTS tutorial.
 - [X] Set the current parameter on the appropriate partial in each of the three views so that the currently visible section is highlighted in each view e.g. "Atoms" is the highlighted menu item in atoms.html.erb.
 
 ## Routing and controlling requests: Exercices
+
 ### Tasks 1
-- [ ] Generate an empty controller named Ideas without any associated views or routes.
+- [X] Generate an empty controller named Ideas without any associated views or routes.
 Manually create the necessary route. The route needs to accept the path ideas/index, and it needs to map that request to the index action in the IdeasController.
-- [ ] Create an index action within IdeasController. This action needs to render the default view of ideas/index.html.erb.
-- [ ] Create the ideas/index.html.erb view. Check that the new view can loaded by running your application and loading the URL http://localhost:3000/ideas/index in your browser.
-- [ ] Change the idea/index.html.erb view contents to use the HTML in the search-results-view.html file attached to the unit resources. Check your progress by loading the URL http://localhost:3000/ideas/index in your browser.
-- [ ] In the ideas/index.html.erb view, we can use the app/views/application/_idea_card.html.erb partial to replace the static Idea card HTML from the template. Iterate through an Array of three Strings in order to render the _idea_card partial three times. The Strings can have any values that you like.
+- [X] Create an index action within IdeasController. This action needs to render the default view of ideas/index.html.erb.
+- [X] Create the ideas/index.html.erb view. Check that the new view can loaded by running your application and loading the URL http://localhost:3000/ideas/index in your browser.
+- [X] Change the idea/index.html.erb view contents to use the HTML in the search-results-view.html file attached to the unit resources. Check your progress by loading the URL http://localhost:3000/ideas/index in your browser.
+- [X] In the ideas/index.html.erb view, we can use the app/views/application/_idea_card.html.erb partial to replace the static Idea card HTML from the template. Iterate through an Array of three Strings in order to render the _idea_card partial three times. The Strings can have any values that you like.

@@ -1,0 +1,28 @@
+<main>
+  <div class="content-wrapper">
+    <h1>Results for "everything"</h1>
+  </div>
+  <div class="content-wrapper">
+    <ul class="bare-list float-grid css-grid">
+      <% ['Northern lights over mountain covered in snow',
+          'Cycling across the Alps',
+          'Test drive a Lamborghini',
+          'Write a short story',
+          'Make a curry',
+          'Volunteer for a charity for one weekend',
+          'Go skydiving',
+          'Inter-rail across Europe',
+          'Learn how to ski'
+          ].each do |title| %>
+        <li>
+          <%= render(partial:'layouts/idea_card', locals: {
+            title: title
+          })%>
+        </li>
+        <% end %>
+    </ul>
+  </div>
+  <div class="see-more">
+    <button class="btn" type="button" data-more="true">See more</button>
+  </div>
+</main>
