@@ -37,4 +37,11 @@ Simple Ruby on Rails app to create for the EPFL EXTS tutorial.
     - Primary button
     - Warning button
 - [X] Modify the styles/_idea_card.html.erb partial so that the title can be passed in as a partial parameter.
-- [ ] In styles/organisms, extract a partial for the "prompt" section of the input forms, that contains everything within the <div class="prompt"> element. Introduce a partial parameter so that it can be reused for all of the forms in the styles/organisms view.
+- [X] In styles/organisms, extract a partial for the "prompt" section of the input forms, that contains everything within the <div class="prompt"> element. Introduce a partial parameter so that it can be reused for all of the forms in the styles/organisms view.
+
+## Tasks 5
+- [ ] The styles#organisms view contains an unordered list of Idea cards. The first two cards make use of the _idea_card partial. Make all instances of the Idea card use the _idea_card partial.
+- [ ] Introduce an Array that contains each of the titles for the Idea cards. Loop over this Array in order to render the cards instead of explicitly rendering each card. Change the titles of the cards to whatever you choose if you wish.
+- [ ] Move the _idea_card partial to the app/views/application/ folder. Create the folder app/views/application/ if it doesn't already exist.
+- [ ] Make use of the _idea_card within home#index for the first Idea card in the list of three.
+- [ ] Introduce an Array that contains Strings for titles of each card. Iterate over the Array in order to render an Idea card for each title. Titles can be whatever you choose.
