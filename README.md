@@ -24,8 +24,8 @@ Simple Ruby on Rails app to create for the EXTS tutorial.
 - [X] Use a reference to the _idea_card partial from 1.1 above to replace the inline three instances in the home/index view of the idea card component.
 
 ## Tasks part 3
-- [ ] Find the Molecules link in the styles/atoms view and replace it with an ERB expression tag that uses a link_to helper method.
-- [ ] Find the Organisms link in the styles/atoms view and replace it with an ERB expression tag that uses a link_to helper method.
-- [ ] Find the Atoms and Organisms links in the styles/molecules view and replace them with ERB expression tags that use a link_to helper method.
-- [ ] Find the Atoms and Molecules links in the styles/organisms view and replace them with ERB expression tags that use a link_to helper method.
-- [ ] Find the root link, /, in the application layout file, app/views/layouts/application.html.erb and replace it with an ERB expression tag that uses a link_to helper method. HINT: you will need to use the #html_safe method on the String for the link contents to make the title render correctly
+- [X] Find the Molecules link in the styles/atoms view and replace it with an ERB expression tag that uses a link_to helper method.
+- [X] Find the Organisms link in the styles/atoms view and replace it with an ERB expression tag that uses a link_to helper method.
+- [X] Find the Atoms and Organisms links in the styles/molecules view and replace them with ERB expression tags that use a link_to helper method.
+- [X] Find the Atoms and Molecules links in the styles/organisms view and replace them with ERB expression tags that use a link_to helper method.
+- [X] Find the root link, /, in the application layout file, app/views/layouts/application.html.erb and replace it with an ERB expression tag that uses a link_to helper method. HINT: you will need to use the #html_safe method on the String for the link contents to make the title render correctly
