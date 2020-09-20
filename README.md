@@ -21,4 +21,4 @@ Simple Ruby on Rails app to create for the EXTS tutorial.
   - Negative logo, named _negative_logo. This will contain the <div class="sg-dark-bg"> element as the root.
   - Search, named _search_control. This will contain the <div class="input-inline"> element as the root.
 - [ ] Use each of the partials to replace the inline HTML in the molecules view, so that the contents of the molecules view are shorter.
-- [ ]Use a reference to the _idea_card partial from 1.1 above to replace the inline three instances in the home/index view of the idea card component.
+- [ ] Use a reference to the _idea_card partial from 1.1 above to replace the inline three instances in the home/index view of the idea card component.
