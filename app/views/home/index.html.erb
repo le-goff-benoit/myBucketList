@@ -17,13 +17,22 @@
     <h2>Some ideas</h2>
     <ul class="bare-list float-grid css-grid">
       <li>
-        <%= render(partial:'style/idea_card')%>
+        <%= render(partial:'style/idea_card',
+        locals: {
+          title: 'Hello to my first Card'
+        })%>
       </li>
       <li>
-        <%= render(partial:'style/idea_card')%>
+        <%= render(partial:'style/idea_card',
+        locals: {
+          title: 'Hello to my second Card'
+        })%>
       </li>
       <li>
-        <%= render(partial:'style/idea_card')%>
+        <%= render(partial:'style/idea_card',
+        locals: {
+          title: 'Hello to my third Card'
+        })%>
       </li>
     </ul>
   </div>

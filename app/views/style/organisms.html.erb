@@ -209,10 +209,7 @@
               <label class="input-group__label" for="goal-description">Description</label>
               <textarea id="goal-description" class="input-group__field"></textarea>
             </div>
-            <div class="prompt">
-              <a class="prompt__cancel" href="#cancel">Cancel</a>
-              <button class="btn btn--primary prompt__confirm" type="submit">Create Goal</button>
-            </div>
+              <%= render(partial:'prompt') %>
           </form>
         </div>
       </section>
@@ -236,10 +233,7 @@
               <label class="input-group__label" for="profile-description">Description</label>
               <textarea id="profile-description" class="input-group__field"></textarea>
             </div>
-            <div class="prompt">
-              <a class="prompt__cancel" href="#cancel">Cancel</a>
-              <button class="btn btn--primary prompt__confirm" type="submit">Update profile</button>
-            </div>
+            <%= render(partial:'prompt') %>
           </form>
         </div>
       </section>
@@ -264,9 +258,7 @@
                 <input id="password" class="input-group__field" type="password" name="password">
               </div>
               <p><a href="forgot-password.html">Forgot password?</a></p>
-              <div class="prompt">
-                <button class="btn btn--primary prompt__confirm" type="submit">Log in</button>
-              </div>
+              <%= render(partial:'prompt') %>
             </form>
           </main>
         </section>
@@ -289,9 +281,7 @@
                 <label class="input-group__label" for="email">Email address</label>
                 <input id="email" class="input-group__field" type="email" name="email" placeholder="e.g. diana.prince@wonder.com">
               </div>
-              <div class="prompt">
-                <button class="btn btn--primary prompt__confirm" type="submit">Reset password</button>
-              </div>
+              <%= render(partial:'prompt') %>
             </form>
           </main>
         </section>
@@ -328,9 +318,7 @@
                 <input id="tos" type="checkbox" />
                 <label for="tos">By signing up I agree to My Bucket List's <a href="tos.html">Terms of Service</a>.</label>
               </div>
-              <div class="prompt">
-                <button class="btn btn--primary prompt__confirm" type="submit">Sign up</button>
-              </div>
+              <%= render(partial:'prompt') %>
             </form>
           </main>
         </section>
@@ -359,10 +347,7 @@
                 <label class="input-group__label" for="repeat-password">Confirm new password</label>
                 <input id="repeat-password" class="input-group__field" type="password" name="repeat-password">
               </div>
-            <div class="prompt">
-              <a class="prompt__cancel" href="#cancel">Cancel</a>
-              <button class="btn btn--primary prompt__confirm" type="submit">Update account settings</button>
-            </div>
+              <%= render(partial:'prompt') %>
           </form>
         </div>
       </section>

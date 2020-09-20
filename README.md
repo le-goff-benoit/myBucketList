@@ -1,5 +1,5 @@
 # My Bucket List
-Simple Ruby on Rails app to create for the EXTS tutorial.
+Simple Ruby on Rails app to create for the EPFL EXTS tutorial.
 
 ## Tasks 1
 - [X] Add static style guide to Rails app.
@@ -31,10 +31,10 @@ Simple Ruby on Rails app to create for the EXTS tutorial.
 - [X] Find the root link, /, in the application layout file, app/views/layouts/application.html.erb and replace it with an ERB expression tag that uses a link_to helper method. HINT: you will need to use the #html_safe method on the String for the link contents to make the title render correctly
 
 ## Tasks 4
-- [ ] From the styles/atoms view, extract a partial for each of the following. Make use of the button_tag helper and also use a partial parameter for the button text. There's no need to introduce a partial parameter for class: in this task.
+- [X] From the styles/atoms view, extract a partial for each of the following. Make use of the button_tag helper and also use a partial parameter for the button text. There's no need to introduce a partial parameter for class: in this task.
     - Button
     - Link button
     - Primary button
     - Warning button
-- [ ] Modify the styles/_idea_card.html.erb partial so that the title can be passed in as a partial parameter.
+- [X] Modify the styles/_idea_card.html.erb partial so that the title can be passed in as a partial parameter.
 - [ ] In styles/organisms, extract a partial for the "prompt" section of the input forms, that contains everything within the <div class="prompt"> element. Introduce a partial parameter so that it can be reused for all of the forms in the styles/organisms view.
