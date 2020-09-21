@@ -7,10 +7,16 @@ class IdeasController < ApplicationController
 
   def create
     @idea_title = params[:title]
+    @idea_done_count = params[:done_count]
+
     newIdea = Idea.new
+
     newIdea.title = @idea_title
+    newIdea.done_count = @idea_done_count
+
     newIdea.save!
-    redirect_to root_path
+
+    redirect_to account_ideas_path
   end
 
   def new

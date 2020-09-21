@@ -103,10 +103,10 @@ Manually create the necessary route. The route needs to accept the path ideas/in
 - [X] In the header of the application layout (app/views/layouts/application.html.erb), change the "Sign Up" link to say "Account", and use a link helper and path helper to link this text to the new /account/ideas view.
 
 ### Tasks 4
-- [ ] Generate a migration that will add the attribute done_count as an integer to the Idea model in the My Bucket List application. The migration name will therefore be AddDoneCountToIdea.
-- [ ] Update the application database schema.
-- [ ] Include the done_count attribute in the ideas/new form and set the value for the done_count attribute in the create action of the IdeasController.
-- [ ] Use the done_count attribute to complete the display value for the "done this" text in the _idea_card.html.erb partial. A new partial parameter will be needed so don't forget to update all usages of the partial!
-- [ ] Generate a migration that will add the attribute photo_url as a string to the Idea model in the My Bucket List application.
-- [ ] Include the photo_url attribute in the ideas/new form and set the value for the photo_url attribute in the create action of the IdeasController.
-- [ ] Use the photo_url attribute in conjunction with the image_tag helper to render the <img> element in the _idea_card.html.erb partial.
+- [X] Generate a migration that will add the attribute done_count as an integer to the Idea model in the My Bucket List application. The migration name will therefore be AddDoneCountToIdea.
+- [X] Update the application database schema.
+- [X] Include the done_count attribute in the ideas/new form and set the value for the done_count attribute in the create action of the IdeasController.
+- [X] Use the done_count attribute to complete the display value for the "done this" text in the _idea_card.html.erb partial. A new partial parameter will be needed so don't forget to update all usages of the partial!
+- [X] Generate a migration that will add the attribute photo_url as a string to the Idea model in the My Bucket List application.
+- [X] Include the photo_url attribute in the ideas/new form and set the value for the photo_url attribute in the create action of the IdeasController.
+- [X] Use the photo_url attribute in conjunction with the image_tag helper to render the <img> element in the _idea_card.html.erb partial.

@@ -2,6 +2,8 @@
 <div class="input-group input-group--horizontal">
   <label class="input-group__label" for="title">Title</label>
 <%= text_field_tag('title', nil, class: 'input-group__field', placeholder: 'E.g. Ride a camel') %>
+<label class="input-group__label" for="title">Done Count</label>
+<%= text_field_tag('done_count', nil, class: 'input-group__field') %>
 </div>
 <div class="prompt">
 <%= link_to('Cancel', account_ideas_path, class: 'prompt__cancel') %>

@@ -19,7 +19,8 @@
       <% ['Hello to my first Card', 'Hello to my second Card', 'Hello to my third Card'].each do |item| %>
       <li>
         <%= render(partial:'layouts/idea_card', locals: {
-          title: item
+          title: item,
+          done_count: 123
         })%>
         </li>
         <% end %>
