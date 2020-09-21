@@ -83,7 +83,6 @@ Manually create the necessary route. The route needs to accept the path ideas/in
 ## Models introduction
 
 ### Tasks 1
-
 - [X] Create an Idea model with one attribute, title, which is a string, using the rails generate model command.  title and string must be lowercase when used in the generator command.
 - [X] Use the rails console to create three instances of Ideas, and save them to the database. Remember that you will be able to use Idea.all to look at the instances that have been stored in the database, and #destroy! on any particular instance to delete it from the database.
 - [X] Within the index action of the IdeasController, retrieve all of the Ideas and assign them to an instance variable @ideas.
@@ -94,3 +93,12 @@ Manually create the necessary route. The route needs to accept the path ideas/in
 - [X] Modify the form inputs in the app/views/ideas/new.html.erb view to make use of the text_field_tag and button_tag helpers. Make sure that the name of the input is 'title', otherwise it will be more difficult to hook the form up in the next steps! If you need to refresh how to use these helpers, documentation for each can be found on the form tag helper documentation.
 - [X] Within the create action of the IdeasController, create a new instance of the Idea model. Use the :title parameter from the params hash to set the Idea#title attribute for this instance and then save it to the database.
 - [X] Create three new Ideas using the new form, which will be accessible from http://localhost:3000/ideas/new, and check that they are displayed correctly on the search results page, http://localhost:3000/ideas/index.
+
+### Tasks 3
+- [X] Generate a controller for our account area called AccountController.
+- [X] Manually add a GET route for /account/ideas to config/routes.rb, along with a controller action in the AccountController and a default view for the route, app/views/account/ideas.html.erb.
+- [X] Use the attached static HTML content for the content of the ideas.html.erb view.
+- [X] Make the HTML within the ideas.html.erb view dynamic by retrieving all Idea instances in the controller action, assigning them to an instance variable and then iterating over them to dynamically generate the HTML for each one.
+- [X] Extract a partial that can be used to render the "editable Idea card" in the ideas.html.erb view.
+- [X] Replace the static Create Idea link button with a dynamically generated link using the link helper and a path helper that links to the idea#new route.
+- [X] In the header of the application layout (app/views/layouts/application.html.erb), change the "Sign Up" link to say "Account", and use a link helper and path helper to link this text to the new /account/ideas view.
