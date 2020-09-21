@@ -79,3 +79,13 @@ Manually create the necessary route. The route needs to accept the path ideas/in
 - [x] Create a new view for the ideas#new action controller, using the default view name for that action. Use the contents of the new-idea-form.html file attached as a resource to this unit for the view content.
 - [x] Modify the <form> element to use the form_tag helper. The form should use a POST method and submit to the ideas#create route. Check that the input for the idea title has the name title.
 - [X] Make the create action redirect to the ideas_index. Check that the title parameter is being output as expected in the rails server terminal`.
+
+## Models introduction
+
+### Tasks 1
+
+- [ ] Create an Idea model with one attribute, title, which is a string, using the rails generate model command.  title and string must be lowercase when used in the generator command.
+- [ ] Use the rails console to create three instances of Ideas, and save them to the database. Remember that you will be able to use Idea.all to look at the instances that have been stored in the database, and #destroy! on any particular instance to delete it from the database.
+- [ ] Within the index action of the IdeasController, retrieve all of the Ideas and assign them to an instance variable @ideas.
+- [ ] Within the ideas/index.html.erb view, replace the static Idea titles with the @ideas collection. Iterate over this collection using using .each in order to render the _idea_card.html.erb partial once for each Idea instance.
+- [ ] Pass the Idea#title attribute for each Idea into the _idea_card.html.erb partial as the title partial parameter.
