@@ -61,9 +61,9 @@ Manually create the necessary route. The route needs to accept the path ideas/in
 - [X] In the ideas/index.html.erb view, we can use the app/views/application/_idea_card.html.erb partial to replace the static Idea card HTML from the template. Iterate through an Array of three Strings in order to render the _idea_card partial three times. The Strings can have any values that you like.
 
 ### Tasks 2
-- [ ] Modify the search form in the header of the application.html.erb layout to use a form_tag, which wraps the search form input. The form needs to submit to the ideas#index route. Remember to use an ERB expression, not a scriptlet, to declare the form_tag. Ensure that the form is rendered with method="GET".
-- [ ] Apply the correct class from the original static form to the form tag.
-- [ ] Use a text_field_tag helper to render the text input for the form. Give it no initial value and a name of 'q'. (q is often used for the name of a search term, such as at google.com)
-- [ ] Apply the correct class and placeholder attributes that were included in the original static input.
-- [ ] Use a button_tag helper to render the submit button for the form, applying the correct CSS classes as button_tag parameters.
-- [ ] Extract the whole search form to a partial named _search_form.html.erb within app/views/application.
+- [X] Modify the search form in the header of the application.html.erb layout to use a form_tag, which wraps the search form input. The form needs to submit to the ideas#index route. Remember to use an ERB expression, not a scriptlet, to declare the form_tag. Ensure that the form is rendered with method="GET".
+- [X] Apply the correct class from the original static form to the form tag.
+- [X] Use a text_field_tag helper to render the text input for the form. Give it no initial value and a name of 'q'. (q is often used for the name of a search term, such as at google.com)
+- [X] Apply the correct class and placeholder attributes that were included in the original static input.
+- [X] Use a button_tag helper to render the submit button for the form, applying the correct CSS classes as button_tag parameters.
+- [X] Extract the whole search form to a partial named _search_form.html.erb within app/views/application.

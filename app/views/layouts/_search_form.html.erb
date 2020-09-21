@@ -1,0 +1,6 @@
+<%= form_tag('/ideas/index', method: :get, class: 'global-search', class: 'global-search') do %>
+<div class="input-row">
+<%= text_field_tag('q', nil, class: 'input-row__field') %>
+<%= button_tag('Search', class: 'btn btn--inline btn--primary') %>
+</div>
+<% end %>
