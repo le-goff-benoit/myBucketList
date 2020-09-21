@@ -19,6 +19,20 @@ class IdeasController < ApplicationController
     redirect_to account_ideas_path
   end
 
-  def new
+  def edit
+    @idea_id = params[:id]
+    @idea = Idea.find(@idea_id)
+  end
+
+  def update
+    @idea_id = params[:id]
+    @idea = Idea.find(@idea_id)
+
+    @idea.title = params[:title]
+    @idea.done_count = params[:done_count]
+
+    @idea.save!
+
+    redirect_to account_ideas_path
   end
 end

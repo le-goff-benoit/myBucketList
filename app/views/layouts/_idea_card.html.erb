@@ -5,8 +5,8 @@
            alt="Northern lights over mountain covered in snow">
     </a>
     <div class="card__intro">
-      <h4 class="card__title"><%= title %></h4>
-      <span><%= done_count %></span>
+      <h4 class="card__title"><%= idea.title %></h4>
+      <span><%= idea.done_count %></span>
     </div>
   </div>
   <div class="card__footer">
@@ -16,11 +16,11 @@
       </svg>
       Like
     </button>
-    <button class="card__btn card__add delta" data-addGoal="see-the-northern-lights">
+    <a class="card__btn card__add delta" href="<%= edit_idea_path(idea) %>">
       <svg class="icon-pluss" role="presentation">
         <use xlink:href="images/icons-defs.svg#pluss"></use>
       </svg>
-      Add Goal
-    </button>
+      Edit
+    </a>
   </div>
 </div>

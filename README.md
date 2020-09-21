@@ -110,3 +110,10 @@ Manually create the necessary route. The route needs to accept the path ideas/in
 - [X] Generate a migration that will add the attribute photo_url as a string to the Idea model in the My Bucket List application.
 - [X] Include the photo_url attribute in the ideas/new form and set the value for the photo_url attribute in the create action of the IdeasController.
 - [X] Use the photo_url attribute in conjunction with the image_tag helper to render the <img> element in the _idea_card.html.erb partial.
+
+### Tasks 5
+- [X] Create the edit and update pair of routes for the Idea model, along with associated empty controller actions and the default view for edit.
+- [X] Make use of the edit_idea_path path helper within the app/views/account/_editable_idea_card.html.erb partial to produce complete URIs to edit each Idea. Hint: Think about how to use each idea instance within the partial from the account/ideas.html.erb view.
+- [X] Create the form for editing an Idea record, which will submit to idea_path as a PATCH. Hint: the view will be very similar to the form in ideas/new.html.erb but each input needs to be populated by using the attributes of an @idea instance assigned in the controller.
+- [X] Implement the update action within the IdeasController to retrieve the correct Idea record from the database using the identifier in the params Hash and then redirect to the /account/ideas route. Manually test that submitting the form redirects correctly. Note: Don't update the fields or save the instance within the update action in this task.
+- [X] Complete the update action implementation so that all of the model attributes are set for the correct record, and it is saved to the database.

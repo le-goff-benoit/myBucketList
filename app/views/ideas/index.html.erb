@@ -7,8 +7,7 @@
       <% @ideas.each do |idea| %>
         <li>
           <%= render(partial:'layouts/idea_card', locals: {
-            title: idea.title
-            done_count: idea.done_count
+            idea: idea
           })%>
         </li>
         <% end %>

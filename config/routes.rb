@@ -17,5 +17,9 @@ Rails.application.routes.draw do
 
   post 'ideas/create'
 
+  get 'ideas/:id/edit', to: 'ideas#edit', as: 'edit_idea'
+
+  patch 'ideas/:id', to: 'ideas#update', as: 'idea'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

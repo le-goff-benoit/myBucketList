@@ -16,11 +16,10 @@
   <div class="content-wrapper">
     <h2>Some ideas</h2>
     <ul class="bare-list float-grid css-grid">
-      <% ['Hello to my first Card', 'Hello to my second Card', 'Hello to my third Card'].each do |item| %>
+      <% @ideas.each do |idea| %>
       <li>
         <%= render(partial:'layouts/idea_card', locals: {
-          title: item,
-          done_count: 123
+          idea: idea,
         })%>
         </li>
         <% end %>
