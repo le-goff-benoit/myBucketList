@@ -82,7 +82,7 @@ Manually create the necessary route. The route needs to accept the path ideas/in
 ## Models introduction
 
 ### Tasks 1
-- [X] Create an Idea model with one attribute, title, which is a string, using the rails generate model command.  title and string must be lowercase when used in the generator command.
+- [X] Create an Idea model with one attribute, title, which is a string, using the rails generate model command.  title and string must be lowercase when used in the generator command.
 - [X] Use the rails console to create three instances of Ideas, and save them to the database. Remember that you will be able to use Idea.all to look at the instances that have been stored in the database, and #destroy! on any particular instance to delete it from the database.
 - [X] Within the index action of the IdeasController, retrieve all of the Ideas and assign them to an instance variable @ideas.
 - [X] Within the ideas/index.html.erb view, replace the static Idea titles with the @ideas collection. Iterate over this collection using using .each in order to render the _idea_card.html.erb partial once for each Idea instance.
