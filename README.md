@@ -9,7 +9,6 @@ Simple Ruby on Rails app to create for the EPFL EXTS tutorial.
 - [X] Generate a view for the home page in a separate controller. Name the controller home and create it with this view: index.
 - [X] In the application.html.erb layout, add a normal stylesheet link to the style guide CSS files /css/main.css and /css/styleguide.css, which we added to the public/ folder previously.
 - [X] Attached to this unit in the resources section is a .zip file containing a file called homepage.html. Download and uncompress the .zip then open the homepage.html file in Atom. It includes HTML comments to indicate which parts within the <body> tag are for the application.html.erb layout and which are for the home/index.html.erb view. Extract these sections and put them into the appropriate places in application.html.erb and the home/index.html.erb view. Be careful not to remove the <%= yield %> tag in application.html.erb!
-
 - [X] For each of the view files created in task 1 for the style guide, replace its contents with the contents from the matching static HTML file within the public/ folder. For each view, this should be the "main" element and it's contents, within <body>.
 
 ### Tasks 2
@@ -102,3 +101,12 @@ Manually create the necessary route. The route needs to accept the path ideas/in
 - [X] Extract a partial that can be used to render the "editable Idea card" in the ideas.html.erb view.
 - [X] Replace the static Create Idea link button with a dynamically generated link using the link helper and a path helper that links to the idea#new route.
 - [X] In the header of the application layout (app/views/layouts/application.html.erb), change the "Sign Up" link to say "Account", and use a link helper and path helper to link this text to the new /account/ideas view.
+
+### Tasks 4
+- [ ] Generate a migration that will add the attribute done_count as an integer to the Idea model in the My Bucket List application. The migration name will therefore be AddDoneCountToIdea.
+- [ ] Update the application database schema.
+- [ ] Include the done_count attribute in the ideas/new form and set the value for the done_count attribute in the create action of the IdeasController.
+- [ ] Use the done_count attribute to complete the display value for the "done this" text in the _idea_card.html.erb partial. A new partial parameter will be needed so don't forget to update all usages of the partial!
+- [ ] Generate a migration that will add the attribute photo_url as a string to the Idea model in the My Bucket List application.
+- [ ] Include the photo_url attribute in the ideas/new form and set the value for the photo_url attribute in the create action of the IdeasController.
+- [ ] Use the photo_url attribute in conjunction with the image_tag helper to render the <img> element in the _idea_card.html.erb partial.
