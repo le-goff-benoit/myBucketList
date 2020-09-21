@@ -72,3 +72,10 @@ Manually create the necessary route. The route needs to accept the path ideas/in
 - [X] In the index action of the IdeasController, assign the value for params[:q] to an instance variable @search_term.
 - [X] Output the search term to the Rails server using logger.info() as part of the string "Search completed using #{@search_term}.".
 - [X] Output the search term on the index.html.erb view in a paragraph alongside the text "Results for ".
+
+### Tasks 4
+- [X] Within the IdeasController, add two actions after the index action, one called new and one called create.
+- [x] Create two new routes, one GET route that directs to the ideas#new controller action and one POST route that directs to the ideas#create controller action.
+- [x] Create a new view for the ideas#new action controller, using the default view name for that action. Use the contents of the new-idea-form.html file attached as a resource to this unit for the view content.
+- [x] Modify the <form> element to use the form_tag helper. The form should use a POST method and submit to the ideas#create route. Check that the input for the idea title has the name title.
+- [X] Make the create action redirect to the ideas_index. Check that the title parameter is being output as expected in the rails server terminal`.
