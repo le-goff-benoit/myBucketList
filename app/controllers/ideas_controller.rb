@@ -7,7 +7,9 @@ class IdeasController < ApplicationController
 
   def create
     @idea_title = params[:title]
-    puts @idea_title
+    newIdea = Idea.new
+    newIdea.title = @idea_title
+    newIdea.save!
     redirect_to root_path
   end
 

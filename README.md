@@ -89,3 +89,8 @@ Manually create the necessary route. The route needs to accept the path ideas/in
 - [X] Within the index action of the IdeasController, retrieve all of the Ideas and assign them to an instance variable @ideas.
 - [X] Within the ideas/index.html.erb view, replace the static Idea titles with the @ideas collection. Iterate over this collection using using .each in order to render the _idea_card.html.erb partial once for each Idea instance.
 - [X] Pass the Idea#title attribute for each Idea into the _idea_card.html.erb partial as the title partial parameter.
+
+### Tasks 2
+- [X] Modify the form inputs in the app/views/ideas/new.html.erb view to make use of the text_field_tag and button_tag helpers. Make sure that the name of the input is 'title', otherwise it will be more difficult to hook the form up in the next steps! If you need to refresh how to use these helpers, documentation for each can be found on the form tag helper documentation.
+- [X] Within the create action of the IdeasController, create a new instance of the Idea model. Use the :title parameter from the params hash to set the Idea#title attribute for this instance and then save it to the database.
+- [X] Create three new Ideas using the new form, which will be accessible from http://localhost:3000/ideas/new, and check that they are displayed correctly on the search results page, http://localhost:3000/ideas/index.
