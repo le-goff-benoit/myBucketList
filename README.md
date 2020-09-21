@@ -69,6 +69,6 @@ Manually create the necessary route. The route needs to accept the path ideas/in
 - [X] Extract the whole search form to a partial named _search_form.html.erb within app/views/application.
 
 ### Taks 3
-- [ ] In the index action of the IdeasController, assign the value for params[:q] to an instance variable @search_term.
-- [ ] Output the search term to the Rails server using logger.info() as part of the string "Search completed using #{@search_term}.".
-- [ ] Output the search term on the index.html.erb view in a paragraph alongside the text "Results for ".
+- [X] In the index action of the IdeasController, assign the value for params[:q] to an instance variable @search_term.
+- [X] Output the search term to the Rails server using logger.info() as part of the string "Search completed using #{@search_term}.".
+- [X] Output the search term on the index.html.erb view in a paragraph alongside the text "Results for ".
