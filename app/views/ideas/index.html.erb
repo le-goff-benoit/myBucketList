@@ -1,22 +1,13 @@
 <main>
   <div class="content-wrapper">
-    <h1>Results for <%= @search_term %> by <%= @search_author %></h1>
+    <h1>Results for <%= @search_term %></h1>
   </div>
   <div class="content-wrapper">
     <ul class="bare-list float-grid css-grid">
-      <% ['Northern lights over mountain covered in snow',
-          'Cycling across the Alps',
-          'Test drive a Lamborghini',
-          'Write a short story',
-          'Make a curry',
-          'Volunteer for a charity for one weekend',
-          'Go skydiving',
-          'Inter-rail across Europe',
-          'Learn how to ski'
-          ].each do |title| %>
+      <% @ideas.each do |idea| %>
         <li>
           <%= render(partial:'layouts/idea_card', locals: {
-            title: title
+            title: idea.title
           })%>
         </li>
         <% end %>
