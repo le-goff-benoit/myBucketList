@@ -35,4 +35,9 @@ class IdeasController < ApplicationController
 
     redirect_to account_ideas_path
   end
+
+  def showidea
+    @idea = Idea.find(params[:id])
+  end
+
 end

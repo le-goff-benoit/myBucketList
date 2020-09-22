@@ -10,12 +10,12 @@
     </div>
   </div>
   <div class="card__footer">
-    <button class="card__btn card__like delta" data-like="see-the-northern-lights">
+    <a class="card__btn card__like delta" data-like="see-the-northern-lights" href="<%= show_idea_path(idea) %>" >
       <svg class="icon-heart icon-heart--liked" role="presentation">
         <use xlink:href="images/icons-defs.svg#heart"></use>
       </svg>
-      Like
-    </button>
+      Show
+    </a>
     <a class="card__btn card__add delta" href="<%= edit_idea_path(idea) %>">
       <svg class="icon-pluss" role="presentation">
         <use xlink:href="images/icons-defs.svg#pluss"></use>
