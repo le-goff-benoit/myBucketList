@@ -1,8 +1,7 @@
 class IdeasController < ApplicationController
   def index
     @search_term = params[:query]
-    @search_author = params[:author]
-    @ideas = Idea.all
+    @ideas = Idea.where('title LIKE ?', "%#{@search_term}%")
   end
 
   def create
